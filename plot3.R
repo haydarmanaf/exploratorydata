@@ -10,6 +10,9 @@ str(hpc)
 y<-paste(hpc$Date,hpc$Time)
 y<-strptime(y,"%d/%m/%Y %H:%M:%S")
 
+#adjust margins
+par(mar=c(4,4,2,2))
+
 #plot graph
 plot(y,hpc$Sub_metering_1,type="l",ylab="Energy sub metering",xlab="")
 lines(y,hpc$Sub_metering_2,type="l",col="red")

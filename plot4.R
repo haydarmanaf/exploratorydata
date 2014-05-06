@@ -12,7 +12,7 @@ y<-strptime(y,"%d/%m/%Y %H:%M:%S")
 
 #change plotting layout
 par(mfrow=c(2,2))
-
+par(mar=c(4,4,2,2))
 #plot graphs on one page
 
 plot(y,hpc$Global_active_power,type="l",,ylab="Global Active Power",xlab="")
